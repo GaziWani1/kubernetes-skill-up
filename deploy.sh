@@ -19,4 +19,4 @@ echo "Getting service ..."
 kubectl get services
 
 echo "Fetching the main service"
-kubectl get service:$NAME
+kubectl get service $NAME-service
