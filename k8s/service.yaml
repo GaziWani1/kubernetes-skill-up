@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+   name: kubernetes-skill-up-api-service
+   labels:
+     app: kubernetes-skill-up-api
+spec:
+  selector:
+     app: kubernetes-skill-up-api
+  ports:
+     - protocol: TCP
+       port: 3000
+       targetPort: 3000
+  type: NodePort
